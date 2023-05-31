@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Revive</title>
+    <link rel="stylesheet" href="./css/styleMenu.css" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="../images/foodRevive.png" alt="logo food revive" class="imagem_foodrevive">
+        <div class="container_navegacao">
+            <nav>
+                <div class="container_botao">
+                <a href="./pages/problema.html" class="link_navegacao">Problema</a>
+                <a href="./pages/iniciativa.html"  class="link_navegacao">Iniciativa</a>
+                <a href="./pages/solucao.html"  class="link_navegacao">Solução</a>
+                <a href="./pages/alimatch.html"  class="link_navegacao">AliMatch</a>
+                <a href="./pages/solucao.html" class="link_navegacao">Contato</a>
+                </div>
+            </nav>
+
+
+
+        </div>
+    </div>
+<footer class="rodape"> 
+    <h3>
+        <p>"© 2023 Todos os direitos reservados"</p>
+
+    <h3>
+        <br>
+        <script> 
+        
+            let data = new Date();
+            let dia = ('0' + data.getDate()).slice(-2);
+            let mes = data.getMonth();
+            let meses = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+            let ano = data.getFullYear();
+
+            document.write(dia + '/' + meses[mes] + '/' + ano);
+            
+            
+        </script>
+</footer>
+
+
+</body>
+</html>
