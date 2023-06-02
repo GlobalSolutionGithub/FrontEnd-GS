@@ -4,21 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/styleContato.css" type="text/css">
 </head>
 <body>
     <div class="menu_nav">
         <nav>
           <ul>
-            <li><a href="../pages/alimatch.html"> AliMatch</a></li>
-            <li><a href="../pages/contato.html"> Contato</a></li>
-            <li><a href="../pages/iniciativa.html"> Iniciativa</a></li>
-            <li><a href="../pages/problema.html"> Problema</a></li>
-            <li><a href="../pages/solucao.html"> Solução</a></li>
-            <li><a href="../index.html"> Página Principal</a></li>
-            
+            <li><a href="../pages/alimatch.html">AliMatch</a></li>
+            <li><a href="../pages/contato.html">Contato</a></li>
+            <li><a href="../pages/iniciativa.html">Iniciativa</a></li>
+            <li><a href="../pages/problema.html">Problema</a></li>
+            <li><a href="../pages/solucao.html">Solução</a></li>
+            <li><a href="../index.html">Página Principal</a></li>
           </ul>
         </nav>
-      </div>
+    </div>
+
+    <div class="titulo_form">
+        <h1 class="titulo_contato">CONTATO</h1>
+        <p class="texto_contato">Para entrar em contato conosco, envie seus dados.</p>
+    </div>
+
+    <form class="formulario">
+        <fieldset class="campos">
+            <div>
+                <label class="indicadores">Nome Completo</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label class="indicadores">Telefone</label>
+                <input type="number" name="numero" id="numero">
+            </div>
+
+            <div>
+                <label class="indicadores">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label class="indicadores">Você se apresenta como:</label>
+                <div class="respostas">
+                    <label>
+                        <input type="radio" name="apresentacao" value="Apoiador">Apoiador
+                    </label>
+
+                    <label>
+                        <input type="radio" name="apresentacao" value="Produtor">Produtor
+                    </label>
+
+                    <label>
+                        <input type="radio" name="apresentacao" value="ONG/ORG">ONG / ORG
+                    </label>
+
+                    <label>
+                        <input type="radio" name="apresentacao" value="Restaurante">Restaurante
+                    </label>
+
+                    <label>
+                        <input type="radio" name="apresentacao" value="Mercado">Mercado
+                    </label>
+                </div>
+            </div>
+
+            <div class="caixa_texto">
+                <label class="indicadores">Escreva o assunto que deseja tratar e conte-nos um pouco sobre você:</label>
+                <textarea rows="10" id="assunto" name="assunto"></textarea>
+            </div>
+
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+
+    </form>
 </body>
 </html>
