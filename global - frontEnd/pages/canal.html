@@ -11,27 +11,21 @@
     <div class="menu_nav">
       <nav>
         <ul>
-          <li><a href="../index.html"> Página Principal</a></li>
-          <li><a href="../pages/iniciativa.html"> Iniciativa</a></li>
-          <li><a href="../pages/problema.html"> Problema</a></li>
-          <li><a href="../pages/alimatch.html"> AliMatch</a></li>
-          <li><a href="../pages/contato.html"> Contato</a></li>
-          <li><a href="../pages/canal.html"> Canal</a></li>
+          <li><a href="../index.html" class="hoverbotao"> Página Principal</a></li>
+          <li><a href="../pages/iniciativa.html"  class="hoverbotao"> Iniciativa</a></li>
+          <li><a href="../pages/problema.html"  class="hoverbotao"> Problema</a></li>
+          <li><a href="../pages/alimatch.html"  class="hoverbotao"> AliMatch</a></li>
+          <li><a href="../pages/contato.html"  class="hoverbotao"> Contato</a></li>
+          <li><a href="../pages/canal.html"  class="hoverbotao"> Canal</a></li>
+          <button id="darkModeToggle">Modo Escuro</button>
         </ul>
       </nav>
     </div>
 
     <div class="container">
-        <div class="redes">
-            <ul class="redes1">
-                <li class="lista1"><a href="https://www.facebook.com">Facebook</a></li>
-                <li class="lista1"><a href="https://www.twitter.com">Twitter</a></li>
-                <li class="lista1"><a href="https://www.instagram.com">Instagram</a></li>
-                <li class="lista1"><a href="https://www.youtube.com">YouTube</a></li>
-            </ul>
-            
-    
-        </div>
+      <div class="logo">
+        <a href="https://www.youtube.com/"><img src="../images/videoYT.jpg" alt="imagem canal YouTube" class="imagem"/></a>
+      </div>
     
       <div class="texto">
         <h3 class="titulo">Nosso Canal</h3>
@@ -49,5 +43,28 @@
         </p>
       </div>
     </div>
+    <script>//botao dark mode
+
+      // Obtém o botão de alternância pelo ID
+      const darkModeToggle = document.getElementById('darkModeToggle');
+
+      // Verifica se o modo escuro está ativado ou desativado
+      const isDarkModeEnabled = () => {
+        return document.body.classList.contains('dark-mode');
+      };
+
+      // Alterna o modo escuro
+      const toggleDarkMode = () => {
+        document.body.classList.toggle('dark-mode');
+      };
+
+      // Adiciona um ouvinte de eventos para o botão de alternância
+      darkModeToggle.addEventListener('click', () => {
+        // Alterna o modo escuro
+        toggleDarkMode();
+
+        // Atualiza o texto do botão de acordo com o estado atual
+        darkModeToggle.innerText = isDarkModeEnabled() ? 'Modo Claro' : 'Modo Escuro';
+      });</script>
   </body>
 </html>

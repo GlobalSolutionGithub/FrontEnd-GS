@@ -69,14 +69,14 @@ body {
   }
   
   .titulo {
-    font-size: 5em;
+    font-size: 3em;
     padding: 10px;
     color: #fff;
     margin-bottom: 10px;
   }
   
   .paragrafo {
-    font-size: 26px;
+    font-size: 20px;
   }
   
   .imagem {
@@ -90,4 +90,19 @@ body {
     width: 700px;
     border: 4px solid black;
   }
+  body.dark-mode {
+    background-color: #333;
+    color: #f2f2f2;
+  }
+  #darkModeToggle{
   
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 26px;
+    margin: 0 1em;
+    margin-left: 10em;
+    border: 2px solid black;
+    border-radius: 4px;
+    
+}

@@ -36,12 +36,71 @@ body{
 }
 
 .rodape{
-    text-align: center;
+    display: flex;
     background-color: #5c8235;
     margin-top: 6em;
     width: 100%;
     padding: 30px;
+    justify-content: center;
 }
+
+body.dark-mode {
+    background-color: #333;
+    color: #f2f2f2;
+  }
+
 
 
  
+  #darkModeToggle{
+  
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 26px;
+    margin: 0 1em;
+    
+    border: 2px solid black;
+    border-radius: 4px;
+    
+}
+
+.rodape__redes1{
+    text-align: left;
+    justify-content: center;
+    margin-right: 12em;
+    
+}
+
+.rodape__data{
+text-align: center;
+justify-content: center;
+}
+
+.rodape__redes2{
+justify-content: center;
+align-items: center;
+margin-top: 0px;
+margin-left: 12em;
+}
+
+.face{
+    width: 40px;
+}
+
+.twitter{
+    width: 40px;
+}
+
+.insta{
+    width: 40px;
+}
+
+.youtube{
+    width: 40px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: black;
+}

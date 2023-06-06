@@ -17,6 +17,7 @@
         <li><a href="../pages/alimatch.html"> AliMatch</a></li>
         <li><a href="../pages/contato.html"> Contato</a></li>
         <li><a href="../pages/canal.html"> Canal</a></li>
+        <button id="darkModeToggle">Modo Escuro</button>
           
         </ul>
       </nav>
@@ -54,5 +55,28 @@
         </p>
       </div>
     </div>
+    <script>//botao dark mode
+
+      // Obtém o botão de alternância pelo ID
+      const darkModeToggle = document.getElementById('darkModeToggle');
+
+      // Verifica se o modo escuro está ativado ou desativado
+      const isDarkModeEnabled = () => {
+        return document.body.classList.contains('dark-mode');
+      };
+
+      // Alterna o modo escuro
+      const toggleDarkMode = () => {
+        document.body.classList.toggle('dark-mode');
+      };
+
+      // Adiciona um ouvinte de eventos para o botão de alternância
+      darkModeToggle.addEventListener('click', () => {
+        // Alterna o modo escuro
+        toggleDarkMode();
+
+        // Atualiza o texto do botão de acordo com o estado atual
+        darkModeToggle.innerText = isDarkModeEnabled() ? 'Modo Claro' : 'Modo Escuro';
+      });</script>
   </body>
 </html>

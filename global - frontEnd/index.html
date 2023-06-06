@@ -10,7 +10,9 @@
 <body>
 
     <div class="container">
+        
         <img src="../images/foodRevive.jpg" alt="logo food revive" class="imagem_foodrevive">
+        
         <div class="container_navegacao">
             <nav>
                 <div class="container_botao">
@@ -19,6 +21,8 @@
                 <a href="./pages/alimatch.html"  class="link_navegacao">AliMatch</a>
                 <a href="../pages/contato.html" class="link_navegacao">Contato</a>
                 <a href="./pages/canal.html"  class="link_navegacao">Canal</a>
+                <a href="./pages/login.html"  class="link_navegacao">Login</a>
+                <button id="darkModeToggle">Modo Escuro</button>
                 </div>
             </nav>
 
@@ -27,23 +31,79 @@
         </div>
     </div>
 <footer class="rodape"> 
-    <h3>
-        <p>"© 2023 Todos os direitos reservados"</p>
+    
 
-    <h3>
-        <br>
-        <script> 
-        
-            let data = new Date();
-            let dia = ('0' + data.getDate()).slice(-2);
-            let mes = data.getMonth();
-            let meses = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-            let ano = data.getFullYear();
+    <section class="rodape__redes1">
+        <div class="redes">
+            <a href="https://www.instagram.com/"><img src="/images/insta.png" class="insta" style="display: inline-block;">
+            <h2 style="display: inline-block;">Instagram</h2> </a>
+            
+            <br>
+            <a href="https://www.youtube.com/"><img src="/images/youtube.png" class="youtube" style="display: inline-block;">
+            <h2 style="display: inline-block;">Youtube</h2> </a>
+            
+        </div>
+    </section> 
+
+
+    <section class="rodape__data">
+        <div>
+            <h3>
+                <p>"© 2023 Todos os direitos reservados"</p>
+
+            <h3>
+            <br>
+            <script> 
+
+                let data = new Date();
+                let dia = ('0' + data.getDate()).slice(-2);
+                let mes = data.getMonth();
+                let meses = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+                let ano = data.getFullYear();
 
             document.write(dia + '/' + meses[mes] + '/' + ano);
             
             
-        </script>
+            </script>
+        </div>
+    </section>
+
+    <section class="rodape__redes2">
+        <div class="redes">
+            <a href="https://www.facebook.com/"><img src="/images/face.png" class="face" style="display: inline-block;">
+            <h2 style="display: inline-block;">Facebook</h2> </a>
+    
+    <br>
+            <a href="https://www.twitter.com/"><img src="/images/twitter.png" class="twitter" style="display: inline-block;">
+            <h2 style="display: inline-block;">Twitter</h2> </a>
+    
+        </div>
+    </section>
+    </div>
+
+    <script>//botao dark mode
+
+        // Obtém o botão de alternância pelo ID
+        const darkModeToggle = document.getElementById('darkModeToggle');
+  
+        // Verifica se o modo escuro está ativado ou desativado
+        const isDarkModeEnabled = () => {
+          return document.body.classList.contains('dark-mode');
+        };
+  
+        // Alterna o modo escuro
+        const toggleDarkMode = () => {
+          document.body.classList.toggle('dark-mode');
+        };
+  
+        // Adiciona um ouvinte de eventos para o botão de alternância
+        darkModeToggle.addEventListener('click', () => {
+          // Alterna o modo escuro
+          toggleDarkMode();
+  
+          // Atualiza o texto do botão de acordo com o estado atual
+          darkModeToggle.innerText = isDarkModeEnabled() ? 'Modo Claro' : 'Modo Escuro';
+        });</script>
 </footer>
 
 

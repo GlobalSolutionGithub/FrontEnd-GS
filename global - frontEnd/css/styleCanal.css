@@ -81,27 +81,32 @@ nav a {
   margin-top: 3em;
 }
 
-a:hover {
+.hoverbotao:hover {
   background-color: #5c8235;
 }
 
-.redes1{
-  list-style-type: none;
-  padding: 0;
+
+.imagem {
+  width: 40em;
+  margin: 0 1em;
+  margin-left: 5em;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+body.dark-mode {
+  background-color: #333;
+  color: #f2f2f2;
 }
 
-.lista1{
-  text-align: center;
+#darkModeToggle{
+  
   padding: 10px 20px;
   background-color: #f2f2f2;
   color: #333;
   font-size: 26px;
-  margin-left: 5em;
-  text-decoration: none;
+  margin: 0 1em;
+  margin-left: 10em;
   border: 2px solid black;
   border-radius: 4px;
-  margin-top: 3em;
+  
 }
-
-
-
