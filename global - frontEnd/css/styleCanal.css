@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #e3f0c4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  margin: 0 4em;
+  border: 2px ;
+  align-items: center;
+}
+
+.texto {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 120px;
+  background-color: #5c8235;
+  width: 40%;
+  max-width: 800px;
+  margin: 7em auto;
+  border-radius: 20%;
+  border: 3px solid black;
+}
+
+.titulo {
+  font-size: 5em;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.paragrafo {
+  font-size: 26px;
+}
+
+.imagem {
+  width: 650px;
+  margin: 0 1em;
+  margin-left: 5em;
+}
+
+.menu_nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 26px;
+  margin: 0 1em;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-top: 3em;
+}
+
+a:hover {
+  background-color: #5c8235;
+}
+
+.redes1{
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista1{
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 26px;
+  margin-left: 5em;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-top: 3em;
+}
+
+
+
